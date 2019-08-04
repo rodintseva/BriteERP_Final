@@ -15,6 +15,9 @@ public class CRMTest extends TestBase {
 
     @Test  //(priority = 1)
     public void Test1() {
+        extentLogger = report.createTest("Verify that second opportunity "+
+                "Expected Revenue value on the Pivot board should be " +
+                "the same as the Expected revenue column value on the list board.");
         CRMPage crmpage = new CRMPage();
         // 1.log in
         // 2.click CRM button
@@ -36,6 +39,8 @@ public class CRMTest extends TestBase {
 
     @Test  //(priority = 2)
     public void Test2() {
+        extentLogger = report.createTest("Verify that on the pivot table, " +
+                "the total expected revenue should be the sum of all opportunities’ expected revenue.");
         CRMPage crmpage = new CRMPage();
         // 1.log in
         // 2.click CRM button
@@ -56,8 +61,7 @@ public class CRMTest extends TestBase {
         int totalExpectedRevenue = Integer.parseInt(totalExpectedRevenuestr);
         System.out.println(sum);
         System.out.println(totalExpectedRevenue);
-         Assert.assertTrue(sum==totalExpectedRevenue);
-
+        Assert.assertTrue(sum==totalExpectedRevenue);
 
     }
 }
