@@ -77,7 +77,7 @@ public class CRMTest extends TestBase {
 
 //*
 //        Verify that second opportunity’ Expected Revenue value on the
-//        Pivot board should be the sameas the Expected revenue column value on the list board.
+//        Pivot board should be the same as the Expected revenue column value on the list board.
 //
 //        */
 
